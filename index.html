@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><span class="front-heading">movie booking app</span> </h1>
+        <form id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+        <span style="font-size:30px;cursor:pointer" onclick="openGenre()">&#9776; Genres</span>
+        
+    </header>
+
+
+
+    <!-- side genres area  -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeGenre()">&times;</a>
+        <div id="tag">
+            <div class="tag">Action </div>
+            <div class="tag">Arcade</div>
+            <div class="tag">Adventure</div>
+        </div>
+
+    </div>
+
+    <!-- side genres area  -->
+
+
+    <!-- movie details section  -->
+    <h3 id="price"></h3>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">&times;</a>
+
+        <div id="movie_details">
+            <div class="overlay-content">
+                <div class="description_image">
+                    <img src="https://images.unsplash.com/photo-1661956601030-fdfb9c7e9e2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=442&q=80"
+                        alt="Image">
+                </div>
+                <div class="movie-details">
+                    <h3>Movie Title</h3>
+                    <h3>rating</h3>
+                    <h3>language</h3>
+
+                    <div id="ticket-container">
+                        <p id="ticket-price">$<span id="price"></span></p>
+                        <button id="buy-button">Buy Ticket</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- movie details section  -->
+
+    <main id="main">
+
+        <div class="movie">
+            <img src="" alt="Image">
+
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green"></span>
+            </div>
+            <div class="overview">
+
+            </div>
+        </div>
+    </main>
+    <!--<div class="pagination">
+        <div class="page-disabled">Previous page</div>
+        <div class="current" id="current">1</div>
+        <div class="page">Next Page</div>
+    </div>-->
+    <script src="script.js"></script>
+ <script src="checkout.js"></script>
+
+</body>
+
+
+</html>
